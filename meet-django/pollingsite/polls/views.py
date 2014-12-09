@@ -5,4 +5,4 @@ from models import Poll, Choice
 # Create your views(functions) here.
 # Remember each function/view the first argument/input has to be request
 def index(request):
-	return HttpResponse("this is the index file");
+	return render(request, "polls/Homepage.html")
